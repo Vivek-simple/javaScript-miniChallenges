@@ -1,0 +1,51 @@
+*{
+    margin :0;
+  
+}
+
+.navbar{
+    background-color: rgb(249, 249, 248);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    height: 60px;
+}
+
+.btn-div,.dices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    margin-top: 10px;
+    left:50%;
+    height: 40px;
+    width: 80px;
+}
+
+.dice {
+	width: 80px;
+	height: 80px;
+	position: relative;
+	margin: 5px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.dice-dot {
+	--top: 0%;
+	--left: 0%;
+
+	width: 15px;
+	height: 15px;
+	background-color: #000000;
+	border-radius: 50%;
+
+
+	position: absolute;
+	top: var(--top);
+	left: var(--left);
+	transform: translateX(calc(var(--left) * -1)) translateY(calc(var(--top) * -1));
+}
